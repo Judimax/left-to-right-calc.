@@ -39,12 +39,12 @@ int main(void) {
 	}
 	return number;
   }	*/  
-  printf("Greetings, how is your day, this should run smoothly \n");	
   printf("Please enter a mathematical expression \n");
-  
   scanf(" %s ",expression);  
-  printf("this is your expression \n %s \n",expression);
-  
+	if (strlen(expression) == 1)  {
+		 printf("this is your answwer \n %s \n",expression);
+		 return 0;
+	}
 	b = expression[a-2] - '0';
 	do {                                  //loop that evaluates the expression
 		c = expression[a] - '0';
